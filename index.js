@@ -1,12 +1,22 @@
-const commando = require('discord.js-commando');
-const bot = new commando.Client();
+ const Discord = require('discord.js');
+  const bot = new Discord.Client();
+  const token = 'NDcyMTM4MjY4NDExMDM1NjQ4.DjvNyQ.X9htLNf_AQgg353NrFACJNlx9CQ';
+  
+  
+  // checks to ensure bot is running, will only run after ready message is recieved in the console 
+  bot.on('ready', () => {
+    console.log('I am ready to welcome!');
+  });
+  
+  //event listener for new guild members
+  bot.on('guildMemberAdd', member => {
+    // Send the message to a designated channel on a server:
+    const channel = member.guild.channels.find('name', 'test-1');
+    // Do nothing if the channel wasn't found on this server
+    if (!channel) return;
+    // Send the message, mentioning the member
+    channel.send(`Welcome to the server, ${member} \n Please answer the question:\n A: I am a streamer\n B: I am a brand`);
 
-bot.registry.registerGroup('welcome', 'Welcome');
-bot.registry.registerDefaults();
-bot.registry.registerCommandsIn(__dirname + "/commands");
-
-bot.on('ready', () => {
-    console.log('I am ready to command!');
   });
   
 bot.on('message', (message, user) => {
