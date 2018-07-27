@@ -4,6 +4,7 @@
  // checks to ensure bot is running, will only run after ready message is recieved in the console 
   bot.on('ready', () => {
     console.log('Floo bot is on and ready to welcome!');
+   bot.user.setActivity(`Hello there!`);
   });
   
   
