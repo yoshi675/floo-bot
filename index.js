@@ -15,7 +15,7 @@
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`Welcome to the server, ${member} \n Please answer the question:\n A: I am a streamer\n B: I am a brand`);
+    channel.send(`Welcome to the server, ${member} \nPlease answer the question:\nA: I am a streamer\nB: I am a brand`);
 
   });
 
