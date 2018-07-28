@@ -32,7 +32,7 @@ bot.on('message', (message, user) => {
     channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@276818612054917120> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
   } else if(message.content.toUpperCase() ==  ('B')) {
     //Send the brand notification mentioning the StreamFluence employee 
-    channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@1387067063171809289> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
+    channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@1138706706317180928> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
   }
 
 });
