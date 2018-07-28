@@ -26,10 +26,10 @@ bot.on('message', (message, user) => {
   //Sends message to test-1 channel
   const channel = message.guild.channels.find('name', 'test-1');
   //Listens for 'A'
-  if(message.content.toUpperCase() == 'A' || 'STREAMER') {
+  if(message.content.toUpperCase() === 'A' || 'STREAMER') {
     //Sends the streamer notiication mentioning the StreamFluence employee
     channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@276818612054917120> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
-  } else if(message.content.toUpperCase() ==  ('B') || 'BRAND') {
+  } else if(message.content.toUpperCase() ===  ('B') || 'BRAND') {
     //Send the brand notification mentioning the StreamFluence employee 
     channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@138706706317180928> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
   }
