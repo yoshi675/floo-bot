@@ -15,8 +15,8 @@
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`Welcome to the StreamFluence Discord Server. I want to make sure we get you set up correctly. Are you a Brand or a Streamer?\nType “a” for Streamer\n
-OR\nType “b” for Brand`);
+    channel.send(`Welcome to the StreamFluence Discord Server. I want to make sure we get you set up correctly. Are you a Brand or a Streamer?\nType a for Streamer\n
+OR\nType b for Brand`);
 
   });
 
@@ -29,8 +29,7 @@ bot.on('message', (message, user) => {
   //Listens for 'A'
   if(message.content.toUpperCase() == 'A') {
     //Sends the streamer notiication mentioning the StreamFluence employee
-    channel.send('Awesome ' + user + '! It looks like you are a Streamer. @GrandSushi#1639 will give you access soon. If you have any questions, he will be the best to ask. Thanks!
-');
+    channel.send('Awesome ' + user + '! It looks like you are a Streamer. @GrandSushi#1639 will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
   } else if(message.content.toUpperCase() ==  ('B')) {
     //Send the brand notification mentioning the StreamFluence employee 
     channel.send('Awesome ' + user + '! It looks like you are a Streamer. @GrandSushi#1639 will give you access soon. If you have any questions, he will be the best to ask. Thanks!);
