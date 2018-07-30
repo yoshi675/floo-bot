@@ -15,7 +15,7 @@
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send('Hello ' + user + '! Welcome to the StreamFluence Discord Server. I want to make sure we get you set up correctly. Are you a Brand or a Streamer?\nType a for Streamer\nOR\nType b for Brand');
+    channel.send(`Welcome to the server, ${member} \n Please answer the question:\n A: I am a streamer\n B: I am a brand`);
 
   });
 
