@@ -23,12 +23,10 @@
 bot.on('message', (message, user) => {
   //Finds user name to mention
   var user = message.author.toString(); 
- 
-  var arr = ['A', 'STREAMER'];
   //Sends message to test-1 channel
   const channel = message.guild.channels.find('name', 'test-1');
   //Listens for 'A'
-  if(message.content.toUpperCase() == arr) {
+  if(message.content.toUpperCase() == ('A')) {
     //Sends the streamer notiication mentioning the StreamFluence employee
     channel.send('Awesome ' + user + '! It looks like you are a Streamer. <@276818612054917120> will give you access soon. If you have any questions, he will be the best to ask. Thanks!');
   } else if(message.content.toUpperCase() ==  ('B')) {
